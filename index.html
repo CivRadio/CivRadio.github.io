@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M3U Player</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Icecast Radio Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <h1>Play M3U Stream</h1>
-
-    <!-- Audio player with direct stream URL -->
-    <audio controls autoplay>
-        <source src="http://174.169.233.7:8000/" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <p>Enjoy the playlist!</p>
+  <h1>🎵 Now Playing</h1>
+  <audio controls autoplay>
+    <!-- Replace with your actual Icecast stream URL -->
+    <source src="http://http://174.169.233.7:8000//stream" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <footer>
+    Icecast Stream Player - Hosted on GitHub Pages
+  </footer>
 </body>
 </html>
